@@ -13,7 +13,7 @@ This library implements the "Multipass" cryptographic protocols, including:
 
 ```toml
 [dependencies]
-smultipass = { git = "https://github.com/getspookyid/smultipass" }
+multipass = { git = "https://github.com/getspookyid/multipass" }
 ```
 
 ## Features

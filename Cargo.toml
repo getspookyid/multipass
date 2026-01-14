@@ -1,5 +1,5 @@
 [package]
-name = "smultipass"
+name = "multipass"
 version = "0.1.0"
 edition = "2021"
 description = "SpookyID: Multipass - Core Cryptography & Identity Library"
