@@ -160,7 +160,7 @@ pub fn verify_puf_signature(public_key: &[u8], challenge: &[u8], signature: &[u8
     // Functional Check: Use actual crypto verification
     // We treat the PUF signature as a standard BBS+ signature over the challenge
     let messages = vec![challenge.to_vec()];
-    match verify_signature_safe(public_key, signature, &messages) {
+    match verify_signature_safe(public_key.to_vec(), signature.to_vec(), messages) {
         Ok(valid) => valid,
         Err(_) => false,
     }

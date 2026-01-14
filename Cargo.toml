@@ -4,7 +4,12 @@ version = "0.1.0"
 edition = "2021"
 description = "SpookyID: Multipass - Core Cryptography & Identity Library"
 
+[lib]
+crate-type = ["cdylib", "rlib"]
+name = "multipass"
+
 [dependencies]
+uniffi = { version = "0.25", features = ["cli"] }
 # Native BLS12-381
 bls12_381 = "0.8"
 blst = "0.3"
@@ -27,3 +32,6 @@ uuid = { version = "1.0", features = ["v4"] }
 ciborium = "0.2"
 
 # Removed: axum, tokio (full), tower-http, sqlx (server dependencies)
+
+[build-dependencies]
+uniffi = { version = "0.25", features = ["build"] }
