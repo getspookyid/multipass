@@ -1,0 +1,7 @@
+[bindings.kotlin]
+package_name = "com.getspookyid.multipass"
+cdylib_name = "multipass"
+
+[bindings.swift]
+module_name = "Multipass"
+cdylib_name = "multipass"
