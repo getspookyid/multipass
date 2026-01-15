@@ -11,10 +11,10 @@ use std::slice;
 use std::ptr;
 use rand::thread_rng;
 
-// pub mod anchor; // Scripts are in separate repo
-// pub mod oidc; // Server only
-pub mod multipass;
-// pub mod db; // Server only
+pub mod periwinkle;
+pub mod attestation;
+pub mod cbor;
+pub mod miner;
 
 uniffi::setup_scaffolding!();
 
